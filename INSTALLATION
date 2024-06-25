@@ -1,0 +1,50 @@
+#ADD NEW SELF HOSTED RUNNER
+#CREATE REPOSITORY --> SETTINGS --> 
+
+
+sudo mkdir actions-runner 
+   87  ll
+   88  cd actions-runner/
+   89  curl -o actions-runner-linux-x64-2.317.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.317.0/actions-runner-linux-x64-2.317.0.tar.gz
+   90  curl -v -o actions-runner-linux-x64-2.317.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.317.0/actions-runner-linux-x64-2.317.0.tar.gz
+   91  sudo curl -v -o actions-runner-linux-x64-2.317.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.317.0/actions-runner-linux-x64-2.317.0.tar.gz
+   92  ll
+   93  echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | shasum -a 256 -c
+   94  yum install shasum
+   95  sudo yum install shasum
+   96  sudo yum install openssl
+   97  echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | shasum -a 256 -c
+   98  sudo echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | shasum -a 256 -c
+   99  sudo find / -name shasum
+  100  which shasum
+  101  which openssl
+  102  sudo echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | /usr/bin/shasum -a 256 -c
+  103  sudo echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | shasum -a 256 -c
+  104  echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | sha256sum -c
+  105  tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
+  106  ll
+  107  cd actions-runner/
+  108  ll
+  109  sudo tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
+  110  ll
+  111  ./config.sh --url https://github.com/aishwarya-bjain/GitHub_Actions --token BE3F43IEGUR5K27STZOD4XLGPMDDE
+  112  ll
+  113  sudo ./config.sh --url https://github.com/aishwarya-bjain/GitHub_Actions --token BE3F43IEGUR5K27STZOD4XLGPMDDE
+  114  chmod -p ec2-user:ec2-user .
+  115  chmod -P ec2-user:ec2-user .
+  116  chmod -R ec2-user:ec2-user .
+  117  chown -R ec2-user:ec2-user .
+  118  ll
+  119  sudo chown -R ec2-user:ec2-user actions-runner/
+  120  ll
+  121  cd actions-runner/
+  122  ll
+  123  ./config.sh --url https://github.com/aishwarya-bjain/GitHub_Actions --token BE3F43IEGUR5K27STZOD4XLGPMDDE
+  124  sudo ./bin/installdependencies.sh
+  125  sudo yum install libicu -y
+  126  sudo yum install dotnet-sdk-6.0 -y
+  127  dotnet --version
+  128  ./config.sh --url https://github.com/aishwarya-bjain/GitHub_Actions --token BE3F43IEGUR5K27STZOD4XLGPMDDE
+  129  ./run.sh
+  130  history
+[ec2-user@ip-172-31-25-251 actions-runner]$ 
